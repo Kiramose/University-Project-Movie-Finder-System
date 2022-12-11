@@ -1,0 +1,47 @@
+#components-form-demo-normal-login .login-form .register-form {
+    padding-top: 200px;
+    min-width: 300px;
+    max-width: 500px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+    float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+    width: 100%;
+}
+
+.bgLight {
+    height: calc(100vh - 64px);
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container-sm {
+    padding: 0 10px;
+    padding-top: 200px;
+    width: 600px;
+}
+
+.align-right-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align-center-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.move-top-10 {
+    margin-top: -10px;
+}
+
+.pb3 {
+    padding-bottom: 15px;
+}

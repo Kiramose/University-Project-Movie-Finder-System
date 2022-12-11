@@ -1,0 +1,19 @@
+.profile-wrapper-edit {
+  margin: 50px 150px;
+  display: flex;
+}
+
+.settings-edit {
+  margin-left: 50px;
+  width: 420px;
+  font-size: 20px;
+}
+
+.upload-button {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.buttons {
+  display: flex;
+}

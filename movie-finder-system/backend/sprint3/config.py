@@ -1,0 +1,13 @@
+HOSTNAME = '127.0.0.1'
+PORT = '3306'
+DATABASE = 'ordinary_folk'
+USERNAME = 'root'
+PASSWORD = '123456'
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(USERNAME, PASSWORD, HOSTNAME, PORT, DATABASE)
+
+SQLALCHEMY_DATABASE_URI = DB_URI
+
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+SECRET_KEY = "sdfsadfskrwerfj1233453345"
+JWT_SECRET_KEY = "b7bcc5dc8c6f421785a24ccb0a5376f4"

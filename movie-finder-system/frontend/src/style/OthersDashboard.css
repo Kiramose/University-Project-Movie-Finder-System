@@ -1,0 +1,60 @@
+.site-layout-content {
+  margin: 50px 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-wrapper {
+  display: flex;
+}
+
+.profile {
+  margin-left: 35px;
+}
+
+.name-id {
+  display: flex;
+}
+
+.id {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.name {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.email {
+  font-size: 16px;
+}
+
+.add-to-follow {
+  margin-top: 12px;
+  display: flex;
+}
+
+.control-panel-others {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 460px;
+}
+
+.text {
+  margin: 0px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: TiemposHeadlineWeb-Bold,Georgia,serif;
+  text-decoration:underline;
+  opacity: 0.6;
+}
+
+.number {
+  margin: 0px 0px -5px 40px;
+  font-size: 24px;
+  font-family: TiemposHeadlineWeb-Bold,Georgia,serif;
+}
+
+.wishlist-wrapper {
+  margin-top: 50px;
+}
