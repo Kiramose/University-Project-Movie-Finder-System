@@ -1,0 +1,42 @@
+Week 1 (05/06/2022)
+
+Group formed. Discuss and decided to do the project 2 Movie finder System. 
+Brain storming and discussing with all group members, we formed the framework of background and wrote 13 user stories (but not acceptance criteria). I participated in the story 1,3,4,9,12,13. In this stage, we decided to use 3 sprints structure, similar with the suggested one. Basically, we would like to write the backend by Python and the frontend by React with js.
+
+In the next week, we would keep filling the proposal and try to write the (c)Technical depth, scale, report formatting part after the lab and lectures. Also, we would start to do some research on related existing project.
+
+
+Week 2 (12/06/2022)
+
+This week we discuss about the proposal and general division of works. I finish the draft of background (problem scope) and user stories part in the proposal, and dicuss with the whole group about what we might do in each sprint. Yinuo Li and I will be responsible for the front-end work within the period of sprint 1.
+
+In the next week, we would start to build the front-end website using React and antDesign. Other group member would find some movie database and build our back-end database.
+
+
+Week 3 (19/06/2022)
+
+This week we start to coding. After Yinuo Li create the frontend project, I write the login and register page, leaving the API calls and some other js functions as blank. I also proof-writing the proposal at the weekend.
+
+In the next week, hope that we can have an API swagger? and I would complete the movie finder system mainpage.
+
+
+Week 4 (26/06/2022)
+
+This week, the login, register and main page has done by me. In weekend, I modify the content of navigate bar (header.jsx), add api call of login, logout and register.
+
+However, working with backend API is some kind of hardest part, especially when we totally have no idea of what kind of evironment setting is needed. So, we spent a lot of time in checking library and so on. Unfortunately, after changing a new ubuntu virtual machine in windows, the eviornment of frontend start to broken too... Still trying to figure it out. I suppose this week's theme is how to make the evironment work... both in frontend and backend... :(
+
+The above problem fixed at Sunday morning, and I found it was beacause I used a later version of nodejs. I summarise the problem solution in main README.md.
+
+
+Week 5 (03/07/2022)
+
+[Environment Problem] On Monday, I do some search about how to collect all packages in backend and use pipreqs generates requirements.txt. This works well for most packages that import in the project, however, we still need to install some other things before we run the API.py to generate swagger. These might be: mysql(still not solved), python3, linux-command (apt-get/apt update&&upgrade) and etc.
+
+Week 6
+
+Solved Problem of MySql installation on Ubuntu 20.
+
+Week 7 (17/07/2022)
+
+This week, I found several bugs in user login/register systems, fixed both the frontend and backend APIs in user login/register system. On weekend, I would keep working on mainpage and optimizer the user login/register system.

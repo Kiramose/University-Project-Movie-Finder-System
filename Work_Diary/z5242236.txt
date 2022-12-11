@@ -1,0 +1,20 @@
+Week1:
+
+In the first week we formed groups and decided on group names. After discussion, we decided to choose "Movie Finder System". Completed the first lab under the guidance of Rachid. Created groups on jira and github.
+We had our first group meeting on Saturday, which focused on sprints in the proposal and user stories. Together we came up with 13 user stories and wrote a draft.
+
+Week2:
+
+1. Completed the Storyboard part of the proposal. 14 diagrams were drawn to explain the Interface and flow diagram.
+2. The group held a meeting on Saturday, mainly around determining the importance of user stories and dividing user stories into different stages. After completing this item, everyone clarified their tasks and which parts of the proposal to write.
+3. Discuss with Yue Cao what technical frameworks are needed for the front end of the website.
+
+Week3:
+Finished the Proposal section last week and started writing code this week.
+After analyzing the user stories that need to be completed in sprint1, it is found that 7 pages need to be completed in sprint1. Cao Yue and I are in charge of the front-end part. After assignment, I was responsible for completing the "Dashborad", "Movie Details" and "Profile" sections. The page has now been roughly written.Some refinement is also required, as well as data interaction with the backend.
+
+Week4:
+This week, the data transfer with the backend is mainly completed based on the interface provided by the backend. Completed sprint 1 features including movie search, profile modification, login and registration. Getting ready for demo A next week.
+
+Week5:
+Demo A was completed on the lab this Tuesday. After the lab, the members of the group held a meeting to discuss how to arrange the progress of sprint 2. After the meeting, I started writing some front-end pages and provided the interface requirements to the back-end.

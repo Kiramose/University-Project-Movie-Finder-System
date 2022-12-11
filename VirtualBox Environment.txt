@@ -1,0 +1,150 @@
+1. Install VirtualBox
+
+1) First, open Webcms3
+
+2) Virtual Machine Guides -> VirtualBox Guide -> Virtual Machine Environment -> VirtualBox Download -> here
+
+3) Choose the appropriate version of VirtualBox (6.1.22 or later)
+
+4)
+Copy link to browser to download lubuntu.zip and unzip it
+https://ixpeering.dl.sourceforge.net/project/linuxvmimages/VMware/L/lubuntu_20.04.1_VM.zip
+
+5)
+Copy link to browser and find VirtualBox 6.1.34 Oracle VM VirtualBox Extension Pack
+Click All supported platforms to download extension pack
+https://www.virtualbox.org/wiki/Downloads
+
+6)
+Install extension pack
+Open VirtualBox and import lubuntu_20.04.1_VM_LinuxVMImages.ovf
+
+7)
+username: lubuntu
+password: lubuntu
+
+
+
+
+
+2. Install Mysql
+
+1) Open Terminal and enter following to install:
+
+sudo apt install mysql-client-core-8.0
+sudo apt install mysql-server
+
+2) Enter following to open Mysql
+
+sudo service mysql start
+mysql -u root -p
+
+May meet ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+Reason: Install the new version of Mysql under Ubuntu linux, the root password is random during installation
+Solution:
+	1)sudo vim /etc/mysql/debian.cnf
+	2)find the password column and take a photo to save it
+	3)enter "esc + :wq" to return
+	4)enter "mysql -u debian-sys-maint -p" in the terminal
+	5)enter password which you just took
+	6)enter "select user, plugin from mysql.user;" to view the user [remember to add ;]
+	7)enter following to change root password 
+		ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '123456';
+	8)enter "flush privileges;" to make the modification take effect
+	9)enter "quit" to quit Mysql
+	10)enter "mysql -u root -p" to open Mysql and new password is 123456
+	11)enter "create DATABASE orinary_folk;" [very important]
+
+
+
+
+
+3.Install python and configure the back-end environment
+
+1) Enter following to install the packages that python3.7.5 depends on
+sudo apt-get install -y gcc g++ cmake make build-essential zlib1g-dev libbz2-dev libsqlite3-dev libssl-dev libxslt1-dev libffi-dev
+
+2) Install Python3.7.5
+Execute the following commands in sequence
+
+	1)wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
+	2)tar -zxvf Python-3.7.5.tgz
+	3)cd Python-3.7.5
+	4)./configure --prefix=/usr/local/python3.7.5 --enable-loadable-sqlite-extensions --enable-sharedmake
+	5)sudo make install
+	#The "--prefix" parameter is used to specify the python installation path, and the user can modify it according to the actual situation. The "--enable-shared" parameter is used to compile the libpython3.7m.so.1.0 dynamic library, "--enable-loadable- sqlite-extensions" parameter is used to load libsqlite3-dev dependencies.
+	#This manual takes the --prefix=/usr/local/python3.7.5 path as an example. After executing the configuration, compilation and installation commands, the installation package is in the /usr/local/python3.7.5 path, and the libpython3.7m.so.1.0 dynamic library is in /usr/local/python3.7.5/lib/libpython3.7m.so.1.0 path
+	
+	6)sudo ln -s /usr/local/python3.7.5/bin/python3 /usr/local/python3.7.5/bin/python3.7.5
+	7)sudo ln -s /usr/local/python3.7.5/bin/pip3 /usr/local/python3.7.5/bin/pip3.7.5
+	#Set the soft connection, then set the environment variable
+	
+	8)export LD_LIBRARY_PATH=/usr/local/python3.7.5/lib:$LD_LIBRARY_PATH
+	#Used to set the python3.7.5 library file path
+	
+	9)export PATH=/usr/local/python3.7.5/bin:$PATH
+	#If there are multiple python3 versions in the user environment, specify the python3.7.5 version
+
+python3.7.5 --version
+pip3.7.5  --version
+python3.7 --version
+pip3.7  --version
+#Execute the above statement to check the version information to confirm whether the installation is successful
+
+	10）
+	The package installation format is
+	pip3.7.5 install xx --user
+	#xx as following, install in sequence
+Flask==2.1.2
+flask_cors==3.0.10
+flask_jwt_extended==4.4.1
+flask_restx==0.5.1
+flask_sqlalchemy==2.5.1
+matplotlib==3.2
+nltk==3.7
+numpy==1.21.6
+pandas==1.3
+pymysql==1.0.2
+requests==2.22.0
+scikit_learn==1.0.2
+Werkzeug==2.1.2
+WTForms==3.0.1
+email_validator==1.2.1
+	
+	11)cd to movie-finder-system/backend/sprint3 and run "python3 database.py"
+	12)run "python3 api_sprint3.2.py"
+
+
+
+
+
+
+
+
+4.Configure the front-end environment
+
+1) Too many apt processes in front may be locked, first kill the process and delete the lock file
+ps -A | grep apt
+sudo kill -9 id #id means process id
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+
+2) Enter "sudo apt update && sudo apt upgrade"
+
+3) Enter following to install nvm
+sudo apt-get install curl
+curl -o https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+#if failed, change "-o" to "-o-" an retry
+
+4) Re-open the terminal, enter "command -v nvm", if return "nvm" means success
+
+5) 
+Enter "nvm install 14.18.0"
+Then use "nvm ls" to check the version of Node which are installed
+To verify the version of nodejs and npm, type: "node -v" and "npm -v"
+To change the using version of node, type: "nvm use 14.18.0"
+
+6) 
+cd to the location of floder "frontend" and then enter following to start
+sudo apt install npm
+npm start

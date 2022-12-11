@@ -1,0 +1,29 @@
+Week1:
+
+In the first week, we formed our group and named it as OrdinaryFolk.
+After analyzing the topics, we choose "Movie Finder System".
+Finally we had our first meeting on Saturday and implemented some of the proposals including user stories.
+
+Week2:
+In this week, we met to determine user stories and divided the work.
+About the proposal, We basically completed the product packlog, sprint backlog and user storyboards, determined the general framework at the same time.
+As the scrum master, I finish my own work in Jira.
+
+Week3:
+In this week, we finish our project proposal and preliminary framework for the system.
+As scrum master, I am mainly responsible for the summary of the proposal and the content update in Jira.
+
+Week4:
+In this week, we prepared for demoA.
+As scrum mater, I follow up and coordinate the work of the developers.
+And I finished the backend part of the code for user registration, login and logout.
+
+Week5&6:
+After DemoA, we group members had a meetting to review things what we done well or not.
+And I write a retropectiveA report to summarize the content of the meeting and suggest the next spint needs to be improved.
+In these two week, our group keep having regular meetting to exchange progress.
+While preparing the draft of the final report, I made some changes to the content on the Jira platform.
+
+Week7:
+In this week, we met to determine the progress of sprint2 and prepared a demoB together.
+I configured the environment required by the system on VirtualBox, and wrote relevant guides and uploaded it to github.

@@ -1,0 +1,30 @@
+Week 1
+Formed a 5-person group called OrdinaryFolk. After assembling the group, we created the Jira accounts, 
+and joined the GitHub classroom. 
+We held our first meeting. We discussed and wrote the user story and sprints section of the proposal.
+And we also decided what software tools we would use in this project.
+
+Week 2
+Connect GitHub to Jira. Extend the user story and fit it to the sprints. Discussed what technology we will use,
+we decide to use MySQL as database method, and python as program language for back-end.
+Discuss with group members on the structure.
+
+Week 3
+Complete most of the proposal, complete the user story, decide the priority of each user story, 
+and which sprint we will put it In. Write the background base on exist websites.
+Find the movie database we could use on our project, and consider to find and use API. 
+Have a meeting with team members that talk about what coding task we should complete on the first demo. 
+And determine to use python and flask package for coding on backend.
+
+week 4
+Complete the Python code of a collaborative filtering item-based recommender system for movie searched, which based on cosine similarity. 
+Complete the Python code that search movie by its exact name and uses get method to return a response body to frontend.
+Have meetings with teammates that talking about further details of api requirements. And discuss the connection of API between frontend and backend. Make sure the functions of backend can display on the frontend properly.
+
+week 5/6
+Complete the Python code that search movies by keyword and using get method to return a response body to frontend.
+Advance the Python code that search movie by exact name and transfer this function to search movies that the movie title contains the string we search. And using the get method to return a response body to frontend.
+Complete the Python code that gets movie details by a movie id and using get method to return a response body to frontend.
+Have a meeting with teammates that decided to enhance the response body of API methods that can make the frontend process smoother. And discuss how to process the sprint 1 demo.
+Fix the bugs and typos for sprint 1 demo.
+Have a decent sprint 1 demo at lab, also get good advice at labs that we need to fix. And after the lab, all teammates have a meeting that discuss sprint 2 and 3 tasks in the future, and improve the details we have to work on.

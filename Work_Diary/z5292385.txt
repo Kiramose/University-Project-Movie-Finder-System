@@ -1,0 +1,29 @@
+Week 1
+Formed a group, signed up for Jira Cloud and joined the Github Classroom.
+We held a group meeting. 13 user stories were discussed and completed during the group meeting.
+We decided to use 3 sprints structure which is the preferred one.
+
+Week2
+Held a meeting about the division of work. Each team member toke on specific responsibilities. 
+We completed the product packlog, sprint backlog and user storyboards and determined the general framework in proposal.
+
+Week3
+We finished the work on proposal, and started working on the code. 
+I set up the database for the movie finder system. My team members created the frontend project and designed the user interface for website.
+
+Week4
+We finished our project proposal and preliminary framework for the system.
+I put movie informations into the database.
+
+Week5
+We got most of the work done for sprint 1.
+I participated in the back-end work.
+
+Week6
+Flexible week.
+
+Week7
+We got all of the work done for sprint 2.
+I participated in the back-end work.
+
+Week8
